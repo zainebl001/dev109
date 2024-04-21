@@ -10,7 +10,7 @@ i, a, a:hover, a:visited {
 	color: #665544;
 }
 p {
-	font-family: 'DancingScriptRegular'; 
+	font-family: 'DancingScriptRegular', cursive; 
  	font-weight: normal; 
  	font-style: normal;
 	font-size: 200%;
@@ -18,7 +18,7 @@ p {
 h1 {
 	text-align:center;
 	color:blue;
-	font-family:'DancingScriptRegular‘;
+	font-family:'DancingScriptRegular‘, cursive;
 	font-size: 400%;
 }
 i {
