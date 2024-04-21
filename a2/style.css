@@ -6,7 +6,7 @@ margin-right:10%;
 
 .white{
 border: 1px solid black;
-width: 10%;
+width: 12.5%;
 height: 60px;
 background-color:white;
 float:left;
@@ -14,7 +14,7 @@ float:left;
 
 .black{
 border: 1px solid black;
-width: 10%;
+width: 12.5%;
 height: 60px;
 background-color:#787878;
 float:left;
@@ -28,6 +28,7 @@ float:left;
  border:solid 1px;
  padding: 10px;
  margin:10px auto;
+ text-align: center;
 }
 
 #container {
