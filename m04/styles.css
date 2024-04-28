@@ -24,7 +24,7 @@
             }
             #footer {
 			  margin: 1%;
-              background-color: #ffd700;
+              background-color: #3c5656;
               padding: 0.5em 0;
             }
             .column1{
@@ -51,9 +51,7 @@
 				display: inline;
 				padding: 0.5em;
               }
-		    #footer {
-				background-color: #3c5656;
-				padding: 0.5em 0;}
+		    
 			#feature, .article {
 				height: 10em;
 				margin-bottom: 1em;
