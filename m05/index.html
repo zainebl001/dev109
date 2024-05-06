@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bullseye! Tutoring</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
+  <body>
+    <section id="page2">
+      <h1>Bullseye</h1>
+      <img src="teacher.png" id="teacher2" alt="" />
+      <section id="blackboard"></section>
+    </section>
+    <script>
+      var number = prompt("Enter a number from 0 to 10:");
+
+      var msg = "<h2>Multiplication Table</h2>";
+      msg += "<table>";
+
+      for (var i = 1; i <= 10; i++) {
+        msg +=
+          "<tr><td>" +
+          i +
+          " x " +
+          number +
+          " = </td><td>" +
+          number * i +
+          "</td></tr>";
+      }
+
+      msg += "</table>";
+
+      document.getElementById("blackboard").innerHTML = msg;
+    </script>
+  </body>
+</html>
