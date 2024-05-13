@@ -11,34 +11,31 @@
 <br>
 <label>Choose color for Even position</label><br>
 <select id="colorEven">
-<option value="#0000FF">Blue</option>
-<option value="#FF0000">Red</option>
-<option value="#FF9900">Orange</option>
+<option value="#CC5500">Burnt Orange</option>
+<option value="#E34234">Vermillion</option>
+<option value="#0047AB">Cobalt Blue</option>
 </select><br>
 
 <label>Choose color for Odd position</label><br>
 <select id="colorOdd">
-<option value="#FF0099">Pink</option>
-<option value="#33FF00">Green</option>
-<option value="#660099">Purple</option>
+<option value="#483248">Eggplant</option>
+<option value="#FFDB58">Mustard Yellow</option>
+<option value="#964B00">Brown</option>
 </select>
 <br>
 <label>Choose symbol for Rhombus</label>
 <select id="symbol">
 <option value="*">*</option>
-<option value="$">$</option>
-<option value="@">@</option>
+<option value="#">#</option>
+<option value="^">^</option>
 </select>
 <br>
 <button onclick="createRhombus(document.getElementById('rHeight').value,
 document.getElementById('colorEven').value,
 document.getElementById('colorOdd').value,
 document.getElementById('symbol').value);">Display Rhombus</button>
-<div id="upLeft"></div>
-<div id="upRight"></div>
-<div id="downLeft"></div>
-<div id="downRight"></div>
-  
+<div id="rhombus" class="rhombus"></div>
+
 <script src="script.js"></script>
 
 
