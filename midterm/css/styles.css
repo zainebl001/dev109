@@ -1,7 +1,9 @@
 #feature,
 .column1,
 .column2,
-.column3 {
+.column3,
+#html-column, 
+#css-column {
   font-family: Arial, Verdana, sans-serif;
   color: #b79c34;
   text-align: center;
@@ -128,6 +130,6 @@ body {
 }
 
 .screenshot img {
-  max-width: 100%;
+  max-width: 25%;
   height: auto;
 }
