@@ -4,10 +4,10 @@
 // var symbol ="*";
 
 function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
-upRight(pHeight, pColorEven, pColorOdd, pSymbol);
 upLeft(pHeight, pColorEven, pColorOdd, pSymbol);
-downRight(pHeight, pColorEven, pColorOdd, pSymbol);
+upRight(pHeight, pColorEven, pColorOdd, pSymbol);
 downLeft(pHeight, pColorEven, pColorOdd, pSymbol);
+downRight(pHeight, pColorEven, pColorOdd, pSymbol);
 
 }
 function upLeft(pHeight, pColorEven, pColorOdd, pSymbol){
@@ -15,7 +15,7 @@ var rLine ="";
 for (i=0;i<pHeight;i++){
 rLine +="<p>";
 //Create each line on the Rhombus
-for(k=0;k<=i;k++){
+for(k=0;k<i;k++){
 rLine += "&nbsp;";}
 
 for (j = i; j < pHeight; j++) {
@@ -65,7 +65,7 @@ var rLine ="";
 for (i=0;i<pHeight;i++){
 rLine +="<p>";
 //Create each line on the Rhombus
-for(k=0;k<=i;k++){
+for(k=0;k<i;k++){
 rLine += "&nbsp;";
 }
 
