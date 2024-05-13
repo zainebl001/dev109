@@ -108,3 +108,26 @@ body {
   padding: 1em;
   box-sizing: border-box;
 }
+#html-column{
+  width: 50%;
+  float: left;
+  padding: 1%;
+}
+#css-column{
+  width: 50%;
+  float: right;
+  padding: 1%;
+}
+.screenshot {
+  margin-bottom: 1em;
+}
+
+.screenshot p {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.screenshot img {
+  max-width: 100%;
+  height: auto;
+}
