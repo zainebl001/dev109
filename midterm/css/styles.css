@@ -110,16 +110,13 @@ body {
   padding: 1em;
   box-sizing: border-box;
 }
-#html-column{
+
+#html-column, #css-column{
   width: 50%;
   float: left;
   padding: 1%;
 }
-#css-column{
-  width: 50%;
-  float: right;
-  padding: 1%;
-}
+
 .screenshot {
   margin-bottom: 1em;
 }
@@ -130,6 +127,6 @@ body {
 }
 
 .screenshot img {
-  max-width: 25%;
+  max-width: 50%;
   height: auto;
 }
