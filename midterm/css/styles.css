@@ -40,18 +40,21 @@ body {
   float: left;
   margin: 1%;
   background-color: #32495a;
+  image-size: 10%;
 }
 .column2 {
   width: 31.3%;
   float: left;
   margin: 1%;
   background-color: #a75f2b;
+  image-size: 10%;
 }
 .column3 {
   width: 31.3%;
   float: left;
   margin: 1%;
   background-color: #344126;
+  image-size: 10%;
 }
 .column3 {
   margin-right: 0%;
