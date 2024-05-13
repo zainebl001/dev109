@@ -130,3 +130,7 @@ body {
   max-width: 50%;
   height: auto;
 }
+
+#content {
+  display: flex;
+}
