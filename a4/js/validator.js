@@ -51,6 +51,7 @@ function validateForm() {
     if (!validFirstname || !validLastname || !validEmail || !validPhone || !validUsername || !validPassword || !validAddress || !validCity || !validState || !validCountry || !validZipcode) {
         return false;
     }
+    warning.innerHTML = "";
     return true;
 }
 
