@@ -1,11 +1,14 @@
-form, validators {
+form {
     border: 2px solid #ccc;
     padding: 20px;
     background-color: #f8f8f8;
     max-width: 400px;
     margin: 0 auto;
 }
-
+validators {
+    padding: 20px;
+    margin: 0 auto;
+}
 .warning {
     color: red;
     font-weight: bold;
