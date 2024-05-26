@@ -11,41 +11,41 @@ function validateForm() {
     var validCountry = validateCountry();
     var validZipcode = validateZipcode();
 
-    var errorMessages = document.getElementById("errorMessages");
-    errorMessages.innerHTML = "";
+    var warrnings = document.getElementById("warrnings");
+    warrnings.innerHTML = "";
 
     if (!validFirstname) {
-        errorMessages.innerHTML += "<p>Please enter a valid first name.</p>";
+        warrnings.innerHTML += "<p>Please enter a valid first name.</p>";
     }
     if (!validLastname) {
-        errorMessages.innerHTML += "<p>Please enter a valid last name.</p>";
+        warrnings.innerHTML += "<p>Please enter a valid last name.</p>";
     }
     if (!validEmail) {
-        errorMessages.innerHTML += "<p>Please enter a valid email address. Email must contain @ & .com</p>";
+        warrnings.innerHTML += "<p>Please enter a valid email address. Email must contain @ & .com</p>";
     }
     if (!validPhone) {
-        errorMessages.innerHTML += "<p>Please enter a valid phone number. No (, -, or .</p>";
+        warrnings.innerHTML += "<p>Please enter a valid phone number. No (, -, or .</p>";
     }
     if (!validUsername) {
-        errorMessages.innerHTML += "<p>Please enter a valid username. Username may only contain a maximum of 12 characters</p>";
+        warrnings.innerHTML += "<p>Please enter a valid username. Username may only contain a maximum of 12 characters</p>";
     }
     if (!validPassword) {
-        errorMessages.innerHTML += "<p>Please enter a valid password. Must be 7 characters long or less.</p>";
+        warrnings.innerHTML += "<p>Please enter a valid password. Must be 7 characters long or less.</p>";
     }
     if (!validAddress) {
-        errorMessages.innerHTML += "<p>Please enter a valid address.</p>";
+        warrnings.innerHTML += "<p>Please enter a valid address.</p>";
     }
     if (!validCity) {
-        errorMessages.innerHTML += "<p>Please enter a valid city.</p>";
+        warrnings.innerHTML += "<p>Please enter a valid city.</p>";
     }
     if (!validState) {
-        errorMessages.innerHTML += "<p>Please select a state.</p>";
+        warrnings.innerHTML += "<p>Please select a state.</p>";
     }
     if (!validCountry) {
-        errorMessages.innerHTML += "<p>Please select a country.</p>";
+        warrnings.innerHTML += "<p>Please select a country.</p>";
     }
     if (!validZipcode) {
-        errorMessages.innerHTML += "<p>Please enter a valid zipcode. Zip codes are 5 digits long</p>";
+        warrnings.innerHTML += "<p>Please enter a valid zipcode. Zip codes are 5 digits long</p>";
     }
 
     if (!validFirstname || !validLastname || !validEmail || !validPhone || !validUsername || !validPassword || !validAddress || !validCity || !validState || !validCountry || !validZipcode) {
