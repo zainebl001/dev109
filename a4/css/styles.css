@@ -9,7 +9,7 @@ validators {
     padding: 20px;
     margin: 0 auto;
 }
-.warning {
+warning {
     color: red;
     font-weight: bold;
     margin-top: 5px;
