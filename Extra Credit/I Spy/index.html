@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Spy Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>I Spy Game</h1>
+        <p>Find the following items:</p>
+        <ul id="item-list">
+            <li id="doll">A Baby Doll</li>
+            <li id="6spade">The 6 of Spades</li>
+            <li id="5dice">A dice showing 5 face up</li>
+        </ul>
+        <div class="image-container">
+          <img src="toysintheattic.jpg" usemap="#image-map">
+          <map name="image-map">
+            <area target="" alt="Doll" title="Doll" href="" coords="76,19,125,76" shape="rect">
+            <area target="" alt="6Spade" title="6Spade" href="" coords="547,264,583,295" shape="rect">
+            <area target="" alt="5Dice" title="5Dice" href="" coords="238,29,256,47" shape="rect">
+          </map>
+        </div>
+        <p id="message"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
 
