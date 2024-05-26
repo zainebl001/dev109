@@ -1,24 +1,15 @@
-function validateForm() {
-    var validFirstname = validateFirstName();
-    var validLastname = validateLastname();
-    var validEmail = validateEmail();
-    var validPhone = validatePhone();
-    var validUsername = validateUsername();
-    var validPassword = validatePassword();
-    var validAddress = validateAddress();
-    var validCity = validateCity();
-    var validState = validateState();
-    var validCountry = validateCountry();
-    var validZipcode = validateZipcode();
+function isValid() {
+    if (firstName() || lastname() || !validEmail || !validPhone || !validUsername || !validPassword || !validAddress || !validCity || !validState || !validCountry || !validZipcode
+    )
+    return true;
+    else
+        document.getElementById("submiterror").innerHTML = "<p><strong>Error Submitting — See Above</strong></p>";
+        event.preventDefault();
+        return false;
+}
 
     var warning = document.getElementById("warning");
     warning.innerHTML = "";
-
-    if (!validFirstname) {
-        warning.innerHTML += "<p>Please enter a valid first name.</p>";
-    }
-    if (!validLastname) {
-        warning.innerHTML += "<p>Please enter a valid last name.</p>";
     }
     if (!validEmail) {
         warning.innerHTML += "<p>Please enter a valid email address. Email must contain @ & .com</p>";
@@ -55,32 +46,59 @@ function validateForm() {
     return true;
 }
 
-function validateFirstName() {
+function firstName(){
+    var validFirstname=false;
     var firstname = document.getElementById("FirstName").value;
-    if (firstname === "" || firstname.length > 20 || !firstname.match(/^[a-zA-Z]+$/)) {
-        return false;
-    }
-    return true;
-}
+    var errorMessages = "";
+    if (firstname==="null" || firstname==="" || firstname.length > 20 ) {
+        errorMessages += "<p>The first name is required and cannot be greater than 20 characters</p>";
+        console.log("First name invalid — length")
+        } else if (firstname.match("^[a-zA-Z ,.'-]+$")===null) {
+            errorMessages += "<p>Invalid caracter in last name (accepts only A-Z, a-z, and ,.'-)</p>";
+            console.log("First name invalid — bad characters")
+        } else {
+                validFirstname = true;
+                console.log("First name valid")
+        };
+    document.getElementById("fname").innerHTML = errorMessages;
+    return (validFirstname);
+};
 
-function validateLastname() {
-    var lastname = document.getElementById("LastName").value;
+function lastname() {
+    var validLastname=false;
+    var validLastname = document.getElementById("LastName").value;
+    var errorMessages = "";
     if (lastname === "" || lastname.length > 50 || !lastname.match(/^[a-zA-Z]+$/)) {
-        return false;
-    }
-    return true;
-}
+        errorMessages += "<p>The last name is required and cannot be greater than 50 characters</p>";
+        console.log("Last name invalid — length")
+        } else if (lastname.match("^[a-zA-Z ,.'-]+$")===null) {
+            errorMessages += "<p>Invalid caracter in last name (accepts only A-Z, a-z, and ,.'-)</p>";
+            console.log("Last name invalid — bad characters")
+        } else {
+                validLastname = true;
+                console.log("Last name valid")
+        };
+    document.getElementById("lname").innerHTML = errorMessages;
+    return (validLastname);
+};
 
-function validateEmail() {
-    var email = document.getElementById("Email").value;
-    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-        return false;
-    }
-    return true;
-}
+function email() {
+    var validEmail=false;
+    var validEmail = document.getElementById("Email").value;
+    var errorMessages = "";
+    if (!emailRegex.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
+        } else if (lastname.match("/^[^\s@]+@[^\s@]+\.[^\s@]+$/")===null) {
+            errorMessages += "<p>Invalid email. Email must contain @ & .com</p>";
+            console.log("Email invalid — bad characters")
+        } else {
+                validEmail = true;
+                console.log("Last name valid")
+        };
+    document.getElementById("email").innerHTML = errorMessages;
+    return (validEmail);
+};  
 
-function validatePhone() {
+function phone() {
     var phone = document.getElementById("Phone").value;
     var phoneRegex = /^[0-9]+$/;
     if (!phoneRegex.test(phone) || phone.length > 15) {
