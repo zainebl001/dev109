@@ -11,41 +11,41 @@ function validateForm() {
     var validCountry = validateCountry();
     var validZipcode = validateZipcode();
 
-    var warnings = document.getElementById("warnings");
-    warnings.innerHTML = "";
+    var warning = document.getElementById("warning");
+    warning.innerHTML = "";
 
     if (!validFirstname) {
-        warnings.innerHTML += "<p>Please enter a valid first name.</p>";
+        warning.innerHTML += "<p>Please enter a valid first name.</p>";
     }
     if (!validLastname) {
-        warnings.innerHTML += "<p>Please enter a valid last name.</p>";
+        warning.innerHTML += "<p>Please enter a valid last name.</p>";
     }
     if (!validEmail) {
-        warnings.innerHTML += "<p>Please enter a valid email address. Email must contain @ & .com</p>";
+        warning.innerHTML += "<p>Please enter a valid email address. Email must contain @ & .com</p>";
     }
     if (!validPhone) {
-        warnings.innerHTML += "<p>Please enter a valid phone number. No (, -, or .</p>";
+        warning.innerHTML += "<p>Please enter a valid phone number. No (, -, or .</p>";
     }
     if (!validUsername) {
-        warnings.innerHTML += "<p>Please enter a valid username. Username may only contain a maximum of 12 characters</p>";
+        warning.innerHTML += "<p>Please enter a valid username. Username may only contain a maximum of 12 characters</p>";
     }
     if (!validPassword) {
-        warnings.innerHTML += "<p>Please enter a valid password. Must be 7 characters long or less.</p>";
+        warning.innerHTML += "<p>Please enter a valid password. Must be 7 characters long or less.</p>";
     }
     if (!validAddress) {
-        warnings.innerHTML += "<p>Please enter a valid address.</p>";
+        warning.innerHTML += "<p>Please enter a valid address.</p>";
     }
     if (!validCity) {
-        warnings.innerHTML += "<p>Please enter a valid city.</p>";
+        warning.innerHTML += "<p>Please enter a valid city.</p>";
     }
     if (!validState) {
-        warnings.innerHTML += "<p>Please select a state.</p>";
+        warning.innerHTML += "<p>Please select a state.</p>";
     }
     if (!validCountry) {
-        warnings.innerHTML += "<p>Please select a country.</p>";
+        warning.innerHTML += "<p>Please select a country.</p>";
     }
     if (!validZipcode) {
-        warnings.innerHTML += "<p>Please enter a valid zipcode. Zip codes are 5 digits long</p>";
+        warning.innerHTML += "<p>Please enter a valid zipcode. Zip codes are 5 digits long</p>";
     }
 
     if (!validFirstname || !validLastname || !validEmail || !validPhone || !validUsername || !validPassword || !validAddress || !validCity || !validState || !validCountry || !validZipcode) {
