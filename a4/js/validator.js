@@ -1,5 +1,5 @@
 function isValid() {
-    if (firstName() || lastname() || !validEmail || !validPhone || !validUsername || !validPassword || !validAddress || !validCity || !validState || !validCountry || !validZipcode
+    if (firstName() || lastname() || email() || phone() || username() || password() || address() || city() || state() || country() || zipcode()
     )
     return true;
     else
@@ -7,45 +7,6 @@ function isValid() {
         event.preventDefault();
         return false;
 }
-
-    var warning = document.getElementById("warning");
-    warning.innerHTML = "";
-    }
-    if (!validEmail) {
-        warning.innerHTML += "<p>Please enter a valid email address. Email must contain @ & .com</p>";
-    }
-    if (!validPhone) {
-        warning.innerHTML += "<p>Please enter a valid phone number. No (, -, or .</p>";
-    }
-    if (!validUsername) {
-        warning.innerHTML += "<p>Please enter a valid username. Username may only contain a maximum of 12 characters</p>";
-    }
-    if (!validPassword) {
-        warning.innerHTML += "<p>Please enter a valid password. Must be 7 characters long or less.</p>";
-    }
-    if (!validAddress) {
-        warning.innerHTML += "<p>Please enter a valid address.</p>";
-    }
-    if (!validCity) {
-        warning.innerHTML += "<p>Please enter a valid city.</p>";
-    }
-    if (!validState) {
-        warning.innerHTML += "<p>Please select a state.</p>";
-    }
-    if (!validCountry) {
-        warning.innerHTML += "<p>Please select a country.</p>";
-    }
-    if (!validZipcode) {
-        warning.innerHTML += "<p>Please enter a valid zipcode. Zip codes are 5 digits long</p>";
-    }
-
-    if (!validFirstname || !validLastname || !validEmail || !validPhone || !validUsername || !validPassword || !validAddress || !validCity || !validState || !validCountry || !validZipcode) {
-        return false;
-    }
-    warning.innerHTML = "";
-    return true;
-}
-
 function firstName(){
     var validFirstname=false;
     var firstname = document.getElementById("FirstName").value;
@@ -64,7 +25,7 @@ function firstName(){
     return (validFirstname);
 };
 
-function lastname() {
+function lastName() {
     var validLastname=false;
     var validLastname = document.getElementById("LastName").value;
     var errorMessages = "";
@@ -86,82 +47,141 @@ function email() {
     var validEmail=false;
     var validEmail = document.getElementById("Email").value;
     var errorMessages = "";
-    if (!emailRegex.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
-        } else if (lastname.match("/^[^\s@]+@[^\s@]+\.[^\s@]+$/")===null) {
-            errorMessages += "<p>Invalid email. Email must contain @ & .com</p>";
+    if (!email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)){
+        (email.match("/^[^\s@]+@[^\s@]+\.[^\s@]+$/")===null)
+            errorMessages += "<p>Invalid email (accepts only A-Z, a-z, and must contain @.)/p>";
             console.log("Email invalid — bad characters")
         } else {
                 validEmail = true;
-                console.log("Last name valid")
+                console.log("Email valid")
         };
     document.getElementById("email").innerHTML = errorMessages;
     return (validEmail);
 };  
 
 function phone() {
-    var phone = document.getElementById("Phone").value;
-    var phoneRegex = /^[0-9]+$/;
-    if (!phoneRegex.test(phone) || phone.length > 15) {
-        return false;
-    }
-    return true;
-}
+    var validPhone=false;
+    var validPhone = document.getElementById("Phone").value;
+    var errorMessages = "";
+    if (!phone.match(/^[0-9]+$/) || phone.length > 15){ 
+        (phone.match("/^[0-9]+$/")===null)
+            errorMessages += "<p>Invalid phone number (accepts only 0-9)</p>";
+            console.log("Phone number invalid — bad characters")
+        } else {
+                validPhone = true;
+                console.log("Phone number valid")
+        };
+    document.getElementById("phone").innerHTML = errorMessages;
+    return (validPhone);
+};  
 
-function validateUsername() {
-    var username = document.getElementById("Username").value;
+function username() {
+    var validUsername=false;
+    var validUsername = document.getElementById("Username").value;
+    var errorMessages = "";
     if (username === "" || username.length > 12 || !username.match(/^[a-zA-Z0-9]+$/)) {
-        return false;
-    }
-    return true;
-}
-
-function validatePassword() {
-    var password = document.getElementById("Password").value;
+        errorMessages += "<p>The username is required and cannot be greater than 12 characters</p>";
+        console.log("Username invalid — length")
+        } else if (username.match("/^[a-zA-Z0-9]+$/")===null) {
+            errorMessages += "<p>Invalid username (accepts only A-Z, a-z, 0-9)</p>";
+            console.log("Username invalid — bad characters")
+        } else {
+                validUsername = true;
+                console.log("Username valid")
+        };
+    document.getElementById("username").innerHTML = errorMessages;
+    return (validUsername);
+};  
+   
+function password() {
+    var validPassword=false;
+    var validPassword = document.getElementById("Password").value;
+    var errorMessages = "";
     if (password === "" || password.length > 7) {
-        return false;
-    }
-    return true;
-}
+        errorMessages += "<p>The password is required and cannot be greater than 7 characters</p>";
+        console.log("Password invalid — length")
+        } else {
+                validPassword = true;
+                console.log("Password valid")
+        };
+    document.getElementById("password").innerHTML = errorMessages;
+    return (validPassword);
+};  
 
-function validateAddress() {
-    var address = document.getElementById("Address").value;
+function address() {
+    var validAddress=false;
+    var validAddress = document.getElementById("Address").value;
+    var errorMessages = "";
     if (address === "") {
-        return false;
-    }
-    return true;
-}
+        errorMessages += "<p>The address is required</p>";
+        console.log("Address invalid — input")
+        } else {
+                validAddress = true;
+                console.log("Address valid")
+        };
+    document.getElementById("address").innerHTML = errorMessages;
+    return (validAddress);
+};  
 
-function validateCity() {
-    var city = document.getElementById("City").value;
+function city() {
+    var validCity=false;
+    var validCity = document.getElementById("City").value;
+    var errorMessages = "";
     if (city === "") {
-        return false;
-    }
-    return true;
-}
-
-function validateState() {
-    var state = document.getElementById("State").value;
+        errorMessages += "<p>The city is required</p>";
+        console.log("City invalid — input")
+        } else {
+                validCity = true;
+                console.log("City valid")
+        };
+    document.getElementById("city").innerHTML = errorMessages;
+    return (validCity);
+};  
+function state() {
+    var validState=false;
+    var validState = document.getElementById("State").value;
+    var errorMessages = "";
     if (state === "") {
-        return false;
-    }
-    return true;
-}
-
-function validateCountry() {
-    var country = document.getElementById("Country").value;
+        errorMessages += "<p>The state is required</p>";
+        console.log("State invalid — input")
+        } else {
+                validState = true;
+                console.log("State valid")
+        };
+    document.getElementById("state").innerHTML = errorMessages;
+    return (validState);
+};  
+function country() {
+    var validCountry=false;
+    var validCountry = document.getElementById("Country").value;
+    var errorMessages = "";
     if (country === "") {
-        return false;
-    }
-    return true;
-}
+        errorMessages += "<p>The country is required</p>";
+        console.log("Country invalid — input")
+        } else {
+                validState = true;
+                console.log("Country valid")
+        };
+    document.getElementById("country").innerHTML = errorMessages;
+    return (validCountry);
+};  
 
-function validateZipcode() {
+function zipcode() {
+    var validZipcode=false;
     var country = document.getElementById("Country").value;
-    var zipcode = document.getElementById("ZipCode").value;
+    var validZipcode = document.getElementById("Zipcode").value;
+    var errorMessages = "";
     if (country === "USA") {
         if (zipcode === "" || zipcode.length !== 5 || !zipcode.match(/^\d+$/)) {
-            return false;
-        }
-    }
-    return true;
-}
+        errorMessages += "<p>The zipcode is required and must be 5 characters long</p>";
+        console.log("Zipcode invalid — length")
+        } else if (zipcode.match("/^\d+$/")===null) {
+            errorMessages += "<p>Invalid zipcode</p>";
+            console.log("Zipcode invalid — bad characters")
+        } else {
+                validUsername = true;
+                console.log("Zipcode valid")
+        };
+    document.getElementById("zipcode").innerHTML = errorMessages;
+    return (validZipcode);
+};  
