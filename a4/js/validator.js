@@ -24,13 +24,13 @@ function validateForm() {
         errorMessages.innerHTML += "<p>Please enter a valid email address.</p>";
     }
     if (!validPhone) {
-        errorMessages.innerHTML += "<p>Please enter a valid phone number.</p>";
+        errorMessages.innerHTML += "<p>Please enter a valid phone number. No (, -, or .</p>";
     }
     if (!validUsername) {
         errorMessages.innerHTML += "<p>Please enter a valid username.</p>";
     }
     if (!validPassword) {
-        errorMessages.innerHTML += "<p>Please enter a valid password.</p>";
+        errorMessages.innerHTML += "<p>Please enter a valid password. 7 characters long</p>";
     }
     if (!validAddress) {
         errorMessages.innerHTML += "<p>Please enter a valid address.</p>";
