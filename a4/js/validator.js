@@ -21,16 +21,16 @@ function validateForm() {
         errorMessages.innerHTML += "<p>Please enter a valid last name.</p>";
     }
     if (!validEmail) {
-        errorMessages.innerHTML += "<p>Please enter a valid email address.</p>";
+        errorMessages.innerHTML += "<p>Please enter a valid email address. Email must contain @ & .com</p>";
     }
     if (!validPhone) {
         errorMessages.innerHTML += "<p>Please enter a valid phone number. No (, -, or .</p>";
     }
     if (!validUsername) {
-        errorMessages.innerHTML += "<p>Please enter a valid username.</p>";
+        errorMessages.innerHTML += "<p>Please enter a valid username. Username may only contain a maximum of 12 characters</p>";
     }
     if (!validPassword) {
-        errorMessages.innerHTML += "<p>Please enter a valid password. 7 characters long</p>";
+        errorMessages.innerHTML += "<p>Please enter a valid password. Must be 7 characters long or less.</p>";
     }
     if (!validAddress) {
         errorMessages.innerHTML += "<p>Please enter a valid address.</p>";
@@ -45,7 +45,7 @@ function validateForm() {
         errorMessages.innerHTML += "<p>Please select a country.</p>";
     }
     if (!validZipcode) {
-        errorMessages.innerHTML += "<p>Please enter a valid zipcode.</p>";
+        errorMessages.innerHTML += "<p>Please enter a valid zipcode. Zip codes are 5 digits long</p>";
     }
 
     if (!validFirstname || !validLastname || !validEmail || !validPhone || !validUsername || !validPassword || !validAddress || !validCity || !validState || !validCountry || !validZipcode) {
