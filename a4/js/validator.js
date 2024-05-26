@@ -12,7 +12,7 @@ function firstName() {
     var validFirstname = false;
     var firstname = document.getElementById("FirstName").value;
     var errorMessages = "";
-    if (firstname === "null" || firstname === "" || firstname.length > 20) {
+    if (firstname === "" || firstname.length > 20) {
         errorMessages += "<p>The first name is required and cannot be greater than 20 characters</p>";
         console.log("First name invalid — length");
     } else if (!firstname.match(/^[a-zA-Z ,.'-]+$/)) {
@@ -30,7 +30,7 @@ function lastName() {
     var validLastname = false;
     var lastname = document.getElementById("LastName").value;
     var errorMessages = "";
-    if (lastname === "null" || lastname === "" || lastname.length > 50) {
+    if (lastname === "" || lastname.length > 50) {
         errorMessages += "<p>The last name is required and cannot be greater than 50 characters</p>";
         console.log("Last name invalid — length");
     } else if (!lastname.match(/^[a-zA-Z ,.'-]+$/)) {
@@ -78,7 +78,7 @@ function username() {
     var validUsername = false;
     var username = document.getElementById("Username").value;
     var errorMessages = "";
-    if (username === "null" || username === "" || username.length > 12) {
+    if (username === "" || username.length > 12) {
         errorMessages += "<p>The username is required and cannot be greater than 12 characters</p>";
         console.log("Username invalid — length");
     } else if (!username.match(/^[a-zA-Z0-9]+$/)) {
@@ -96,7 +96,7 @@ function password() {
     var validPassword = false;
     var password = document.getElementById("Password").value;
     var errorMessages = "";
-    if (password === "null" || password === "" || password.length > 7) {
+    if (password === "" || password.length > 7) {
         errorMessages += "<p>The password is required and cannot be greater than 7 characters</p>";
         console.log("Password invalid — length");
     } else {
@@ -111,7 +111,7 @@ function address() {
     var validAddress = false;
     var address = document.getElementById("Address").value;
     var errorMessages = "";
-    if (address === "null" || address === "") {
+    if (address === "") {
         errorMessages += "<p>The address is required</p>";
         console.log("Address invalid — input");
     } else {
@@ -126,7 +126,7 @@ function city() {
     var validCity = false;
     var city = document.getElementById("City").value;
     var errorMessages = "";
-    if (city === "null" || city === "") {
+    if (city === "") {
         errorMessages += "<p>The city is required</p>";
         console.log("City invalid — input");
     } else {
@@ -141,7 +141,7 @@ function state() {
     var validState = false;
     var state = document.getElementById("State").value;
     var errorMessages = "";
-    if (state === "null" || state === "") {
+    if (state === "") {
         errorMessages += "<p>The state is required</p>";
         console.log("State invalid — input");
     } else {
@@ -156,7 +156,7 @@ function country() {
     var validCountry = false;
     var country = document.getElementById("Country").value;
     var errorMessages = "";
-    if (country === "null" || country === "") {
+    if (country === "") {
         errorMessages += "<p>The country is required</p>";
         console.log("Country invalid — input");
     } else {
@@ -170,10 +170,10 @@ function country() {
 function zipcode() {
     var validZipcode = false;
     var country = document.getElementById("Country").value;
-    var zipcode = document.getElementById("Zipcode").value;
+    var zipcode = document.getElementById("ZipCode").value;
     var errorMessages = "";
     if (country === "USA") {
-        if (zipcode === "null" || zipcode === "" || zipcode.length !== 5 || !zipcode.match(/^\d+$/)) {
+        if (zipcode === "" || zipcode.length !== 5 || !zipcode.match(/^\d+$/)) {
             errorMessages += "<p>The zipcode is required and must be 5 characters long</p>";
             console.log("Zipcode invalid — length");
         } else {
