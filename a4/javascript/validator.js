@@ -63,9 +63,9 @@ function phone() {
     var validPhone = false;
     var phone = document.getElementById("Phone").value;
     var errorMessages = "";
-    if (!phone.match(/^[0-9]+$/) || phone.length !== 15) {
-        errorMessages += "<p>Invalid phone number (accepts only 0-9 and cannot be greater than 15 digits)</p>";
-        console.log("Phone number invalid — bad characters");
+    if (!phone.match(/^\d{15}$/)) {
+        errorMessages += "<p>Invalid phone number (must be exactly 15 digits)</p>";
+        console.log("Phone number invalid — bad format");
     } else {
         validPhone = true;
         console.log("Phone number valid");
@@ -182,8 +182,9 @@ function zipcode() {
         }
     } else {
         validZipcode = true;
-        console.log("Zipcode valid");
+        console.log("Zipcode valid for non-USA country");
     }
     document.getElementById("zipcode").innerHTML = errorMessages;
     return validZipcode;
 }
+
