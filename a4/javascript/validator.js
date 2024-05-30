@@ -63,7 +63,7 @@ function phone() {
     var validPhone = false;
     var phone = document.getElementById("Phone").value;
     var errorMessages = "";
-    if (!phone.match(/^[0-9]+$/) || phone.length > 15) {
+    if (!phone.match(/^[0-9]+$/) || phone.length !== 15) {
         errorMessages += "<p>Invalid phone number (accepts only 0-9 and cannot be greater than 15 digits)</p>";
         console.log("Phone number invalid — bad characters");
     } else {
