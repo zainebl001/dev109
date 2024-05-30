@@ -64,7 +64,7 @@ function phone() {
     var phone = document.getElementById("Phone").value;
     var errorMessages = "";
     if (!phone.match(/^\d{10}$/)) {
-        errorMessages += "<p>Invalid phone number (must be exactly 15 digits)</p>";
+        errorMessages += "<p>Invalid phone number (must be exactly 10 digits)</p>";
         console.log("Phone number invalid — bad format");
     } else {
         validPhone = true;
