@@ -1,4 +1,13 @@
-#slideshow, #caption {
-    display: block;
-    margin: 0 auto;
+.slideshow-container {
+  text-align: center;
+}
+
+.slideshow-image {
+  width: 960px;
+  height: 540px;
+  display: none;
+}
+
+.caption {
+  display: none;
 }
