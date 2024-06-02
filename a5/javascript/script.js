@@ -46,21 +46,20 @@ var previousButton = document.getElementById("previous");
 previousButton.addEventListener("click", back, false);
 nextButton.addEventListener("click", next, false);
 
+var autoslide;
+
 function autoSlide() {
   if (document.getElementById("auto").checked) {
     next();
   }
 }
 
-var intervalId;
+interval = setAutoslide(autoSlide, 10000);
 
-function startInterval() {
-  intervalId = setInterval(autoSlide, 10000);
+
+function restartAutoslide() {
+  clearAutoslide(autoslide);
+  startAutoslide();
 }
 
-function restartInterval() {
-  clearInterval(intervalId);
-  startInterval();
-}
-
-startInterval();
+startAutoslide();
