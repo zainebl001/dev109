@@ -13,6 +13,7 @@ var captionImages = [
   "This image depicts a swarm of over 100 bees in their hive."
 ];
 var index = 0;
+var interval;
 
 function updateImage() {
   document.getElementById("slideshow").src = myImages[index];
