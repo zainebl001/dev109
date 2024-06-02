@@ -1,4 +1,3 @@
-<script>
   var myImages = [
     "https://uhdwallpapers.org/uploads/converted/19/04/03/spring-bee-blossom-flower-picture-1920x1080_479654-mm-90.webp",
     "https://h2.gifposter.com/bingImages/HoneycombBee_1920x1080.jpg",
@@ -56,5 +55,3 @@
   }
 
   startInterval();
-</script>
-
