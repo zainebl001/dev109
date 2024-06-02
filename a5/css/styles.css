@@ -17,3 +17,14 @@
 body {
     font-family: Arial, sans-serif;
 }
+
+button {
+    text-align: center;   
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#button-container {
+    text-align: center;
+    margin-top: 20px; 
+}
