@@ -1,4 +1,11 @@
-#slideshow, #caption {
+#slideshow {
+    display: block;
+    margin: 0 auto;
+    width: 960px;
+    height: 540px;
+}
+
+#caption {
     display: block;
     margin: 0 auto;
     width: 960px;
