@@ -15,9 +15,9 @@ var captionImages = [
 var index = 0;
 
 function updateImage() {
-  document.querySelector("slideshow").src = myImages[index];
-  document.querySelector("slideshow").alt = captionImages[index];
-  document.querySelector("caption").textContent = captionImages[index];
+  document.getElementById("slideshow").src = myImages[index];
+  document.getElementById("slideshow").alt = captionImages[index];
+  document.getElementById("caption").textContent = captionImages[index];
 }
 
 function next() {
