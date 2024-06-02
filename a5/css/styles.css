@@ -1,5 +1,4 @@
-#slideshow {
+#slideshow, caption {
     display: block;
     margin: 0 auto;
 }
-
