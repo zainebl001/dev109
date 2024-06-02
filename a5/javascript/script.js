@@ -55,7 +55,7 @@ function autoSlide() {
 var intervalId;
 
 function startInterval() {
-  intervalId = setInterval(autoSlide, 2000);
+  intervalId = setInterval(autoSlide, 10000);
 }
 
 function restartInterval() {
