@@ -9,7 +9,7 @@ var captionImages = [
   "This image depicts a bee pollinating a mirabelle plum (Prunus domestica subsp. syriaca) tree.",
   "This image depicts a bee interacting with honeycomb strengthening the hive.",
   "This image depicts a bee landing on a latice structure.",
-  "This image depicts a close up intircate photograph of a bee.",
+  "This image depicts an intircate close up photograph of a bee.",
   "This image depicts a swarm of over 100 bees in their hive."
 ];
 var index = 0;
