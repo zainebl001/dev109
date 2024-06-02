@@ -29,4 +29,3 @@ function foundItem(item) {
         }, 100);
     }
 }
-
