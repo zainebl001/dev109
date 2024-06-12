@@ -51,8 +51,12 @@ li {
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
   text-align: center;
   align-items: center;
+  font-size: 2.5em;
+  font-weight: bold;
 }
 
 p {
