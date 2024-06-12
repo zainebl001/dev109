@@ -39,7 +39,7 @@ li {
 }
 
 #content {
-  overflow: auto;
+  overflow: hidden;
 }
 
 #feature {
