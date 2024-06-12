@@ -3,7 +3,7 @@ body {
   width: 90%;
   margin: 0 auto;
   background-image: url("../images/ai-generated-honey-background-free-photo.jpg");
-  min-height: 100vh;
+  min-height: calc(100vh - 165px);
   background-repeat: no-repeat;
   background-size: cover;
 }
