@@ -55,6 +55,11 @@ li {
   align-items: center;
 }
 
+p {
+  text-align: center;
+  align-items: center;
+}
+
 .column1, .column2, .column3 {
   width: 31.3%;
   float: left;
