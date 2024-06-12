@@ -1,107 +1,88 @@
-#feature,
-.column1,
-.column2,
-.column3,
-#html-column, 
-#css-column {
+body {
+  font-family: Arial, Verdana, sans-serif;
+  width: 90%;
+  margin: 0 auto;
+  background-image: url("../images/ai-generated-honey-background-free-photo.jpg");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#header, #feature, .column1, .column2, .column3, #html-column, #css-column {
   font-family: Arial, Verdana, sans-serif;
   color: #b79c34;
   text-align: center;
 }
-#footer,
-#nav {
+
+#nav, #footer {
   font-family: Arial, Verdana, sans-serif;
   color: #ffffff;
   text-align: center;
 }
-body {
-  width: 90%;
-  margin: 0 auto;
-}
-#content {
-  overflow: auto;
-}
+
+
 #nav {
   margin: 1%;
   background-color: #3c5656;
   padding: 0.5em 0;
 }
 
-#feature {
-  margin: 1%;
-  height: 10em;
-  margin-bottom: 1em;
-}
-#footer {
-  margin: 1%;
-  background-color: #5a8282;
-  padding: 0.5em 0;
-}
-.column1 {
-  width: 31.3%;
-  float: left;
-  margin: 1%;
-  background-color: #32495a;
-}
-.column1 img {
-  overflow: hidden;
-  width: 90%;
-  height: 90%
-}
-.column2 {
-  width: 31.3%;
-  float: left;
-  margin: 1%;
-  background-color: #a75f2b;
-}
-.column2 img {
-  overflow: hidden;
-  width: 90%;
-  height: 90%
-}
-.column3 {
-  width: 31.3%;
-  float: left;
-  margin: 1%;
-  background-color: #344126;
-}
-.column3 img {
-  overflow: hidden;
-  width: 90%;
-  height: 90%
-}
-.column3 {
-  margin-right: 0%;
-}
 li {
   display: inline;
   padding: 0.5em;
 }
 
-#feature,
-.article {
+
+#footer {
+  margin: 1%;
+  background-color: #5a8282;
+  padding: 0.5em 0;
+}
+
+
+#content {
+  overflow: auto;
+}
+
+#feature {
+  margin: 1%;
   height: 10em;
   margin-bottom: 1em;
-}
-#feature {
   background-color: #a64e6a;
   background-image: url("../images/BEEs.png");
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
 }
-#header {
-  font-family: "Jersey 25", sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  text-align: center;
-  color: #c96a10;
+
+.column1, .column2, .column3 {
+  width: 31.3%;
+  float: left;
+  margin: 1%;
 }
-body {
-  background-image: URL("../images/ai-generated-honey-background-free-photo.jpg");
-  min-height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
+
+.column1 {
+  background-color: #32495a;
+}
+
+.column2 {
+  background-color: #a75f2b;
+}
+
+.column3 {
+  background-color: #344126;
+}
+
+.column1 img, .column2 img, .column3 img {
+  overflow: hidden;
+  width: 90%;
+  height: 90%;
+}
+
+#html-column, #css-column {
+  width: 50%;
+  float: left;
+  padding: 1%;
 }
 
 .article {
@@ -109,12 +90,6 @@ body {
   margin-bottom: 1em;
   padding: 1em;
   box-sizing: border-box;
-}
-
-#html-column, #css-column{
-  width: 50%;
-  float: left;
-  padding: 1%;
 }
 
 .screenshot {
@@ -129,4 +104,30 @@ body {
 .screenshot img {
   max-width: 50%;
   height: auto;
+}
+
+form {
+  border: 2px solid #ccc;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.errorMessages {
+  color: red;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.validators {
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
 }
