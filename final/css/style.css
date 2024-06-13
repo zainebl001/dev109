@@ -8,7 +8,7 @@ body {
   background-size: cover;
 }
 
-#header, #feature, .column1, .column2, .column3, .column4, .column5, #html-column, #css-column, #contact {
+#header, #feature, .column1, .column2, .column3, .column4, .column5, .column6, .column7, .column8, .column9, #html-column, #css-column, #contact {
   font-family: Arial, Verdana, sans-serif;
   color: #b79c34;
   text-align: center;
@@ -78,7 +78,7 @@ p {
   align-items: center;
 }
 
-.column1, .column2, .column3, .column4, .column5 {
+.column1, .column2, .column3, .column4, .column5, .column6, .column7, .column8, .column9 {
   width: 31.3%;
   float: left;
   margin: 1%;
@@ -102,6 +102,22 @@ p {
 
 .column5 {
   background-color: #b0b0b0;
+}
+
+.column6 {
+  background-color: #8b0000;
+}
+
+.column7 {
+  background-color: #d4a017;
+}
+
+.column8 {
+  background-color: #468b8a;
+}
+
+.column9 {
+  background-color: #f08080;
 }
 
 .column1 img, .column2 img, .column3 img, .column4 img, .column5 img {
