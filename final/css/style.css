@@ -8,7 +8,7 @@ body {
   background-size: cover;
 }
 
-#header, #feature, .column1, .column2, .column3, #html-column, #css-column, #contact {
+#header, #feature, .column1, .column2, .column3, .column4, .column5, #html-column, #css-column, #contact {
   font-family: Arial, Verdana, sans-serif;
   color: #b79c34;
   text-align: center;
@@ -78,7 +78,7 @@ p {
   align-items: center;
 }
 
-.column1, .column2, .column3 {
+.column1, .column2, .column3, .column4, .column5 {
   width: 31.3%;
   float: left;
   margin: 1%;
@@ -96,7 +96,15 @@ p {
   background-color: #344126;
 }
 
-.column1 img, .column2 img, .column3 img {
+.column4 {
+  background-color: #e5d9b6;
+}
+
+.column5 {
+  background-color: #b0b0b0;
+}
+
+.column1 img, .column2 img, .column3 img, .column4 img, .column5 img {
   overflow: hidden;
   width: 90%;
   height: 90%;
